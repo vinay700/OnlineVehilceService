@@ -1,0 +1,131 @@
+﻿<html>
+<head><center>
+<h1>VKV SERVICES </h1>
+</center>
+<style>
+h1{
+font-size:40px;
+color:red;}
+body  {
+    
+   background-repeat: no-repeat;
+    background-size: 1400px 700px;
+background-color: lightblue;
+}
+
+</style>
+<script>
+function val()
+{
+var time1=document.appform.time;
+if(time1.value="6pm")
+{
+alert("this time slot is not available ");
+time1.value="";
+time1.focus();
+return false;
+
+}	
+</script>
+</head>
+<body>
+<H1><CENTER></CENTER></H1>
+
+
+<table>
+<form name="appform" method="post" action="receive_book.php" onsubmit= "return val()">
+<tr>
+<th> Username
+</th>
+<td>   <input type="text" name="username" required placeholder="enter user name"><BR><BR>
+</td>
+</tr>
+<tr>
+<th> Password
+</th>
+<td>   
+<input type="password" name="password" required placeholder="*****"><BR><BR>
+</td>
+<th>
+SELECT BIKES </th>
+<td>
+<select name="bikes"  id="bikes">
+<option value="Honda Dream"> Honda Dream	</option>
+<option value="Honda Livo">Honda Livo</option>
+<option value="Honda CB Shine">Honda CB Shine	</option>
+<option value=" Honda CB Unicorn"> Honda CB Unicorn	</option>
+<option value="Honda CBR	"> Honda CBR	</option>
+<option value="Honda Twister"> Honda Twister	</option>
+<option value=" Honda Stunner"> Honda Stunner</option>
+<option value="Hero HF Delux">Hero HF Delux</option>
+<option value=" Hero Passion"> Hero Passion</option>
+<option value="Hero Splender"> Hero Splender</option>
+<option value="Hero Glamour"> Hero Glamour</option>
+<option value="Hero Achiver"> Hero Achiver</option>
+<option value="Hero Ignitor"> Hero Ignitor</option>
+<option value=" Hero Xtreame"> Hero Xtreame</option>
+<option value="Hero Hunk"> Hero Hunk</option>
+<option value=" Hero Impulse"> Hero Impulse</option>
+<option value="Hero Karizma"> Hero Karizma</option>
+<option value="Suzuki Hayate"> Suzuki Hayate</option>
+<option value="Suzuki Slingshot">Suzuki Slingshot	</option>
+<option value="Suzuki Gixxer">Suzuki Gixxer</option>
+<option value=" TVS Apache"> TVS Apache</option>
+<option value="TVS Vector"> TVS Vector</option>
+<option value="TVS Star city plus">TVS Star city plus</option>
+<option value="TVS Phoenix"> TVS Phoenix</option>
+<option value="Yamaha FZ"> Yamaha FZ</option>
+<option value="Yamaha Fazer"> Yamaha Fazer</option>
+<option value="Yamaha R15"> Yamaha R15</option>
+<option value="Yamaha Gladiator"> Yamaha Gladiator</option>
+<option value="Bajaj CD100"> Bajaj CD100	</option>
+<option value="Bajaj Platina"> Bajaj Platina</option>
+<option value="Bajaj Pulser"> Bajaj Pulser</option>
+<option value="Bajaj Avenger">Bajaj Avenger</option>
+<option value="Bajaj Discover"> Bajaj Discover</option>
+<option value="Bajaj Pulser200NS	">Bajaj Pulser200NS	</option>
+<option value="Bajaj Pulser200AS">Bajaj Pulser200AS</option>
+</optgroup>
+</select>
+</td>
+</tr>
+
+<tr rowspan=2>
+
+<th>
+SELECT DATE</th>
+<td><input type="date" NAME="date" id="date" min="2016-04-15"><BR><BR>
+</td>
+</tr>
+
+
+
+<tr>
+
+<th>
+SELECT TIME</th>
+<td>
+<select name="time" id="time">
+
+<option></option>
+<option value="9am"> 9am </option>
+<option  value="12pm"> 12pm</option>
+<option value="3pm"> 3pm</option>
+<option value="6pm"> 6pm</option>
+</optgroup>
+</select>
+</td>
+<tr>
+</tr></table>
+<br><br><br>
+<a href="bikes.html"><input type="button" value="BACK"></a>
+<center><INPUT TYPE="RESET" NAME="R" VALUE="RESET">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<INPUT TYPE="SUBMIT" NAME="S" VALUE="SUBMIT"><br><br><br>
+NOTE: WE PROVIDE SERVICES ARE <br> (water wash ,engine oil change ,coolant oil change ,battery check,air check,dent<br> removal if needed,fork bend check,alighnment checking,<br>air filter checking,lights & horn check, polishing,<br>solution for petrol leakage )
+<br><br>
+
+
+</form>
+</center>
+</BODY>
+</HTML>

@@ -1,0 +1,58 @@
+<html>
+<head>
+<link rel="stylesheet" href="k.css">
+<script>
+function disp(mode)
+{
+	if (mode==1)
+		alert("COST OF  60(inclusive service charges)");
+	else if(mode==2)
+		 alert("COST OF  100(inclusive service charges)");
+ 	else if(mode==3)
+		alert("COST OF  400(inclusive service charges)");
+	else if(mode==4)
+		alert ("COST OF  100( inclusive service charges)");
+}
+</script>
+<style>
+body h1{
+    color: black;
+
+}
+
+div a{
+		background-color:black;
+		color:red;
+		padding:10px 20px;
+		text-decoration:none;
+}
+body{  font-weight:bold;
+background-color: lightblue;
+color: green;
+}
+</style>
+<body><center>
+<ul>
+  <li><a class="active" href="sum.html">Home</a>
+ <li><a href="aboutus.html">About us</a>
+ <li><a href="mobile.html">Roadside assistances</a>
+ <li><a href="feedback.html">Feedback</a>
+<li><a href="mopeds.html"> Mopeds</a>
+<li><a href="bikes.html">Bikes</a>
+</ul>
+<h1> vkv services</h1>
+<img src="logo3.jpg"  height=90 width=260>
+</center>
+<form>
+<input type="radio" onclick= "disp(1)"  name=var>Puncher<br>
+<input type="radio" onclick= "disp(2)"  name=var>Break failure<br>
+<input type="radio" onclick= "disp(3)"  name=var>Coolant change<br>
+<input type="radio" onclick= "disp(4)"  name=var>Battery<br>
+</form>
+
+<div>
+<a href=#ok>ok</a>
+<a href=sum.html>back</a>
+</div>
+</body>
+</html>

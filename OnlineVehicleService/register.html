@@ -1,0 +1,151 @@
+<html>
+<head>
+<style>
+body  {
+
+   background-repeat: no-repeat;
+    background-size: 1400px 650px;
+background-color: lightblue;
+}
+h1{
+color:red;
+}
+</style>
+<script>
+function validate(){
+var pas=document.fname.pass;
+var pas1=document.fname.rpass;
+var pno=document.fname.phone;
+var pcode=document.fname.pin;
+var r_m=document.getElementById("id_m");
+var r_f=document.getElementById("id_f");
+if(pas.value!=pas1.value)
+{
+alert("password must match");
+pas1.value="";
+pas1.focus();
+pas1.style.background='yellow';
+return false;
+}
+if(pno.value.length!=10)
+{
+alert("enter 10 digit number");
+pno.focus();
+pno.style.background='yellow';
+return false;
+}
+if(pcode.value.length!=6)
+{
+alert("enter valid pincode");
+pcode.focus();
+pcode.style.background='yellow';
+return false;
+}
+if(!(r_m.checked||r_f.checked))
+{ alert ("enter a valid gender");
+}
+}
+</script>
+</head>
+<body><H1><CENTER>
+VKV SERVICES<br></CENTER></H1><H2><CENTER>
+Register Now</CENTER></H2>
+
+<table>
+<form name="fname" method="post" action="receive.php" onsubmit="return validate()">
+<tr>
+<th> FIRST NAME
+</th>
+<td> <input type="text" name="finame" placeholder="Enter First Name" required><BR><BR>
+</td>
+</tr>
+<tr>
+<th> LAST NAME
+</th>
+<td> <input type="text" name="lname" placeholder="Enter Last Name" required><BR><BR>
+</td>
+</tr>
+<tr>
+<th> DOB
+</th>
+<td> <input type="date" NAME="dob" required max="2000-12-31"><BR><BR>
+</td>
+</tr>
+<tr rowspan=2>
+<th> GENDER
+</th>
+<td>   <input type="radio" name="gen" VALUE="MALE" id="id_m">MALE
+                     <input type="radio" name="gen" VALUE="FEMALE" id="id_f">FEMALE<BR> <BR>
+</td>
+</tr>
+<tr>
+<th> Username
+</th>
+<td>   <input type="text" name="uname" required><BR><BR>
+</td>
+</tr>
+<tr>
+<th> Password
+</th>
+<td>   <input type="password" name="pass" required><BR><BR>
+</td>
+</tr>
+<tr>
+<th>Retype Password
+</th>
+<td>   <input type="password" name="rpass" required><BR><BR>
+</td>
+</tr>
+<tr>
+<th> Phone Number
+</th>
+<td>  <INPUT TYPE="TEXT" NAME="phone" required><BR><BR>
+</td>
+</tr>
+<tr rowspan=3>
+<th> ADDRESS
+</th>
+<td>  <textarea rows=4 column=4 input   name="addr" required></textarea> <BR><BR>
+</td>
+
+</tr>
+<tr>
+<th>
+EMAIL
+</th>
+<td> <input type="email" name="mailid" required> <br> <br>
+</td>
+</tr>
+<tr>
+<th>CITY 
+</th>
+<td> 
+<INPUT TYPE="TEXT" NAME="city" required><BR><BR>
+</td>
+
+
+</tr>
+<tr>
+<th> STATE
+</th>
+<td> <INPUT TYPE="TEXT" NAME="state"  required><BR><BR>
+</td>
+</tr>
+<tr>
+<th>PINCODE
+</th>
+<td> <INPUT TYPE="TEXT" NAME="pin" required><BR><BR>
+</td>
+</tr>
+</table>
+<br><br><br>
+<a href="sum.html"><input type="button" value="BACK"></a>
+                     <center><INPUT TYPE="reset" NAME="r" VALUE=RESET>
+<INPUT TYPE="submit" NAME="s" VALUE=SUBMIT>
+
+
+
+
+</FORM>
+</BODY>
+</HTML>
